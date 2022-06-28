@@ -1,0 +1,17 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/abigeddi/Desktop/kilwa'
+gcc  -c mini.c -o mini.o -I /Users/abigeddi/.brew/opt/readline/include
+ 
+gcc  -c liste.c -o liste.o -I /Users/abigeddi/.brew/opt/readline/include
+ 
+gcc  -c parsing/token00.c -o parsing/token00.o -I /Users/abigeddi/.brew/opt/readline/include
+ 
+gcc  -c parsing/token01.c -o parsing/token01.o -I /Users/abigeddi/.brew/opt/readline/include
+ 
+gcc  -c parsing/token02.c -o parsing/token02.o -I /Users/abigeddi/.brew/opt/readline/include
+ 
+gcc  -c syntax/syntax.c -o syntax/syntax.o -I /Users/abigeddi/.brew/opt/readline/include
+ 
+gcc  mini.o liste.o parsing/token00.o parsing/token01.o parsing/token02.o syntax/syntax.o -L /Users/abigeddi/.brew/opt/readline/lib -lreadline -o minishell
+make: Leaving directory `/Users/abigeddi/Desktop/kilwa'
+ 
